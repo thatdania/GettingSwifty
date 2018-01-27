@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Find_My_Age" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are 0 years old" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wd-C7-AbL">
+                                <rect key="frame" x="83" y="322" width="208" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.63820905120000004" green="1" blue="0.84187148700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What Year were you born in!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RC4-qd-ZeG">
+                                <rect key="frame" x="63" y="258" width="248" height="30"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="alphabet"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRa-nw-hjf">
+                                <rect key="frame" x="100" y="374" width="175" height="73"/>
+                                <color key="backgroundColor" red="0.49331501350000001" green="0.21477795750000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find Your Age">
+                                    <color key="titleColor" red="0.63820905120000004" green="1" blue="0.84187148700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebu-dp-i8y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49406407777360545" green="0.16951459371649039" blue="0.86364556347150256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Wd-C7-AbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="OnX-HE-T80"/>
+                            <constraint firstItem="RC4-qd-ZeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="Vg8-Cz-Igu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RC4-qd-ZeG" secondAttribute="trailing" constant="64" id="Vzn-Dh-hhB"/>
+                            <constraint firstItem="PRa-nw-hjf" firstAttribute="top" secondItem="7Wd-C7-AbL" secondAttribute="bottom" constant="40" id="cCS-zd-hPf"/>
+                            <constraint firstItem="PRa-nw-hjf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="e8b-v7-10e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Wd-C7-AbL" secondAttribute="trailing" constant="84" id="eZY-oN-2a5"/>
+                            <constraint firstItem="7Wd-C7-AbL" firstAttribute="top" secondItem="RC4-qd-ZeG" secondAttribute="bottom" constant="34" id="grk-fi-zW7"/>
+                            <constraint firstItem="RC4-qd-ZeG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="238" id="l9y-vg-idV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PRa-nw-hjf" secondAttribute="trailing" constant="100" id="rGd-6e-cwB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="YearofBirth" destination="RC4-qd-ZeG" id="GER-HF-0WL"/>
+                        <outlet property="showAge" destination="7Wd-C7-AbL" id="7pL-lw-T5y"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-212" y="-18.440779610194905"/>
+        </scene>
+    </scenes>
+</document>
