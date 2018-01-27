@@ -27,4 +27,4 @@ cd GettingSwifty
 3. Open this project up in Xcode.
 4. Run the play button.
 
-Should all work, hahahaha (first trial ok guys please) 
+Should all work, hahahaha (first trial ok guys please)🧙‍♀️ 
